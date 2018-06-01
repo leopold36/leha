@@ -1,11 +1,16 @@
-
-
 <!DOCTYPE html>
 <html>
+{% load static %}
+
+<script src="{% static "counter.js" %}"></script>
+
     <head>
-        <title>Treemaker</title>
-        <script> alert("hello world"); </script>
+        
+        <title>Groove</title>
+        
+      
     </head>
+    
     <body>
         {% for entity in entity %}
         
@@ -13,7 +18,8 @@
             
         {% endfor %}
             
-           
+        <h1 id="counter">0</h1>
+        <button>Click here!</button>
        
     </body>
 </html>
